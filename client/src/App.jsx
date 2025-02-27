@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Spreadsheet from './pages/Spreadsheet'
 
 const App = () => {
   // Dynamically update the title section
@@ -7,7 +8,9 @@ const App = () => {
   }, []);
 
   return (
-    <div>App</div>
+    <div>
+      <Spreadsheet/>
+    </div>
   )
 }
 
