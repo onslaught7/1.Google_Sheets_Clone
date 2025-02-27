@@ -44,8 +44,27 @@ const Toolbar = () => {
           <option>Verdana</option>
           <option>Times New Roman</option>
           <option>Courier New</option>
+          <option>Georgia</option>
+          <option>Garamond</option>
+          <option>Trebuchet MS</option>
+          <option>Comic Sans MS</option>
+          <option>Impact</option>
+          <option>Tahoma</option>
+          <option>Lucida Sans</option>
+          <option>Franklin Gothic Medium</option>
+          <option>Palatino Linotype</option>
+          <option>Century Gothic</option>
+          <option>Calibri</option>
+          <option>Monospace</option>
+          <option>Futura</option>
+          <option>Cambria</option>
+          <option>Didot</option>
+          <option>Rockwell</option>
+          <option>Helvetica</option>
+          <option>Gill Sans</option>
+          <option>Optima</option>
+          <option>Brush Script MT</option>
         </select>
-
         <select className="toolbar-select" value={fontSize} onChange={(e) => setFontSize(e.target.value)}>
           {[10, 12, 14, 16, 18, 20, 24, 28, 32].map(size => (
             <option key={size}>{size}</option>
@@ -70,7 +89,10 @@ const Toolbar = () => {
           </button>
           {showTextColorDropdown && (
             <div className="color-dropdown">
-              {["#000000", "#FF0000", "#00FF00", "#0000FF", "#FFFF00"].map(color => (
+              {["#000000", "#FF0000", "#00FF00", "#0000FF", "#FFFF00",
+                "#FFA500", "#800080", "#FFC0CB", "#808080", "#00FFFF",
+                "#008000", "#FF4500", "#8B4513", "#4B0082", "#FFD700",
+                "#A52A2A", "#C0C0C0", "#F0E68C", "#DC143C", "#E6E6FA"].map(color => (
                 <div key={color} className="color-option" style={{ backgroundColor: color }}></div>
               ))}
             </div>
@@ -84,7 +106,10 @@ const Toolbar = () => {
           </button>
           {showFillColorDropdown && (
             <div className="color-dropdown">
-              {["#FFFFFF", "#FFC0CB", "#90EE90", "#ADD8E6", "#FFD700"].map(color => (
+              {["#000000", "#FF0000", "#00FF00", "#0000FF", "#FFFF00",
+                "#FFA500", "#800080", "#FFC0CB", "#808080", "#00FFFF",
+                "#008000", "#FF4500", "#8B4513", "#4B0082", "#FFD700",
+                "#A52A2A", "#C0C0C0", "#F0E68C", "#DC143C", "#E6E6FA"].map(color => (
                 <div key={color} className="color-option" style={{ backgroundColor: color }}></div>
               ))}
             </div>
