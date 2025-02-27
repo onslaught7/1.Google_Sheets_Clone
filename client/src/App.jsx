@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import Spreadsheet from './pages/Spreadsheet'
+import Header from './components/Header';
+import Toolbar from './components/Toolbar';
 
 const App = () => {
   // Dynamically update the title section
@@ -9,6 +11,8 @@ const App = () => {
 
   return (
     <div>
+      <Header/>
+      <Toolbar/>
       <Spreadsheet/>
     </div>
   )
